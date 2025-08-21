@@ -139,7 +139,7 @@
         <div>
           <span class="badge">• Circuit Design • ESD • Reliability </span>
           <h1 class="title">Doctoral Researcher at KIT</h1>
-          <p class="subtitle">Experienced Senior Design Engineer at Global Foundries with a demonstrated history of working in the semiconductors industry and academic researcher with expertise in analog circuit design and optimzation using ML methods, reliability analysis, and robust circuit design. </p> <!-- Previously at GlobalFoundries (Device Enablement), now focusing on reliability-aware design for next‑gen circuits and flexible electronics.</p>-->
+          <p class="subtitle">Experienced Senior ESD Design Engineer at Global Foundries with a demonstrated history of working in the semiconductors industry and academic researcher with expertise in analog circuit design and optimzation using ML methods, reliability analysis, and robust circuit design. </p> <!-- Previously at GlobalFoundries (Device Enablement), now focusing on reliability-aware design for next‑gen circuits and flexible electronics.</p>-->
           <div class="cta">
             <a class="btn primary" href="https://scholar.google.com/citations?hl=en&user=0pknZjIAAAAJ&view_op=list_works&authuser=2&sortby=pubdate">View Publications</a>
             <a href="PP.pdf" class="btn primary" download>Download CV</a>
@@ -199,8 +199,8 @@ extraction for BEOL resistance and capacitance using EMX and RF (S-parameter) mo
 EMX/PEX extraction</li> 
 
 		<ul>
-			<li><b>ESD Compact Modeling:</b> Developed and validated compact models for LV, MV, and HV ESD devices (LDMOS, VPNPs, BiSCR, Switch FETs) across advanced nodes (130nm–22FDX).</li>
 			<li><b>RF ESD Design:</b> Designed mmWave-compatible ESD protection circuits and optimized performance using EMX.</li>
+			<li><b>ESD Compact Modeling:</b> Developed and validated compact models for LV, MV, and HV ESD devices (LDMOS, VPNPs, BiSCR, Switch FETs) across advanced nodes (130nm–22FDX).</li>
 			<li><b>Automation & QA:</b> Built Python/R scripts for model validation, hardware correlation, and data processing across technologies.</li>
 			<li><b>Layout & Tape-out:</b> Designed DC/RF test structures, performed LVS/PEX extraction, and conducted RF modeling.</li>
 			<li><b>Collaboration & Training:</b> Mentored peers on compact modeling, simulation, and layout workflows.</li>
@@ -277,10 +277,11 @@ EMX/PEX extraction</li>
             <li>Designed a three-stage OTA achieving stable gain (≈0.9 V/V) and output current (≈10.6 µA) across −20 °C to 185 °C, with reference voltage stability (0.5–0.8 V at VDD = 1–3 V) and robust PVT tolerance.</li>
 			<li>Designed a flexible LDO regulator with stable output voltage across wide PVT and thermal variations, and integrate structural BIST ensuring reliable operation.</li>
 			<li> Designed a pruned binary-search ADC design that reduces area by ~2× versus SOTA ADCs and ~5.4× versus flash ADCs, with ~5× transistor-count reduction through in-training optimization.</li>
-			<!--<li>Two‑stage fully differential Op‑Amp (SCL/UMC 180nm): Gain 80 V/V; CM gain 0.1 V/V; ICMR 0.3–0.9 V; <abbr title="Unity‑gain frequency">UGF</abbr>≈100 MHz; <span style="color:var(--ok);font-weight:600">P≈100 µW</span>.</li>-->
+			<li>3-bit Flash ADC Design: Resolution of 3 bits (8 quantization levels, LSB = Vref/8); Reference Voltage = 1 V (scalable up to 3 V); Architecture with 7 comparators, resistor-ladder reference, and thermometer-to-binary encoder; Single clock cycle conversion speed (fastest ADC type).</li>
+  			<li>3-bit Binary-Search ADC: Staged comparisons (Vref/2 → {3/4, 1/4}Vref → {7/8, 5/8, 3/8, 1/8}Vref) to resolve (A2, A1, A0); implemented using resistor ladder + enabled comparators + small control (T2–T7); verified in Cadence; LSB = Vref/8.</li>
 			<li>Low Dropout Regulator (LDO): Designed in SCL 180 nm technology for digital applications with 200 mV dropout (Vin 2 V → 1.8 V), 200 ns settling time, 10 μA quiescent current, and PSRR of –40 dB @ 1 MHz.</li>  
 			<li>Bandgap Reference Circuit (BGR): Developed in SCL 180 nm with 1.8 V supply (tolerant up to 2.5 V), –40 °C to 125 °C temperature range, and ultra-low power dissipation of 50 μW.</li>
-
+			<li>Charge Pump: Designed a high-efficiency charge pump in SCL 180 nm for flash memory applications; addressed threshold voltage degradation due to the body effect, achieving improved power efficiency with minimal performance loss.</li>
 		  </ul>
         </div>
         <div class="item">
